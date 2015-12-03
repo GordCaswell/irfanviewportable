@@ -93,6 +93,7 @@ Important notes:
 - Maximal command line length is limited to 4096 chars: use Drag&Drop, /file or /filelist for very large lists
 - Most settings are loaded from the INI file. Using prepared INIs and /ini option, you can extend the possibilities.
 - IrfanView exit code is 0. If /convert or /print is used, there is 1 or 2 also possible, for load/save error.
+- Please test (e.g. conversions) first in GUI mode => some options may need to be set first (saved to INI file).
 
 
 Example for conversion: 
@@ -299,6 +300,7 @@ Examples for /hide:
 Examples for /info:
   i_view32.exe c:\test.jpg /info=c:\test.txt
   i_view32.exe c:\*.jpg /info=c:\jpgs.txt
+  i_view32.exe c:\*.jpg /info=c:\jpgs.csv
   i_view32.exe c:\test.jpg /info=c:\test.txt /fullinfo
 
 Example for /append:

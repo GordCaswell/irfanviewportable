@@ -5,6 +5,18 @@ E-Mail: irfanview@gmx.net
 WWW   : http://www.irfanview.com
 -------------------------------------------------------------------------------
 
+Version 4.41		(Release date: 2015-11-29)
+- 64-bit version: Use 32-bit TWAIN drivers if 64-bit drivers not installed
+- New dialog/GUI on Windows tablets ("2 in 1" ,Thanks to Arun Anbu from Intel)
+- New hotkey: SHIFT + Tab: Start/End Tablet mode dialog
+- New hotkey: CTRL + Insert: Edit->Copy
+- New Slideshow hotkey: Q = Pause/Resume a timer slideshow
+- New option for /info command line: write CSV file: /info=infofile.csv
+- Added PlugIns-Installer options for: /silent and /folder (Check FAQs page)
+- "Amazon 1Button App" offer removed
+- Some fixes (Auto color correction, PNG compression, UNC-Paths in 64-bit)
+-------------------------------------------------------------------------------
+
 Version 4.40		(Release date: 2015-07-31)
 - The 64-bit version of IrfanView is available: http://www.irfanview.com/64bit.htm
   The 64-bit version is faster for very large images (25+ Megapixels)
