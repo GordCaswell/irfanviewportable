@@ -1,13 +1,15 @@
-IrfanView Software License Agreement
+IrfanView Software License Agreement.
 
 This is a legal agreement between you and IrfanView Software (Irfan Skiljan) covering your use of IrfanView (the "Software").
 
 1) IrfanView is provided as freeware, but only for private, non-commercial use (that means at home).
 
-1a) IrfanView is free for educational use (schools, universities and libraries) and for use in charity or humanitarian organisations.
+1a) IrfanView is free for educational use (schools, universities, museums and libraries) and for use in charity or humanitarian organisations.
 
 1b) If you intend to use IrfanView at your place of business or for commercial purposes, please register and purchase it.
 Commercial users: please contact me by E-Mail for prices, discounts and payment methods.
+
+1c) If you buy IrfanView license(s), Irfanview hereby grants to you a perpetual, worldwide, fully paid-up, non-exclusive license to use the Software solely for your internal business purposes.
 
 2) IrfanView Software is owned by Irfan Skiljan and is protected by copyright laws
 and international treaty provisions. Therefore, you must treat the Software like any other
@@ -29,9 +31,9 @@ production, or delivery of this software be liable for any direct, incidental or
 damages, such as, but not limited to, loss of anticipated profits, benefits, use, or data resulting
 from the use of this software, or arising out of any breach of warranty.
 
-Copyright (C) 2012 by Irfan Skiljan, Wiener Neustadt, Austria.
+Copyright (C) 2016 by Irfan Skiljan, Wiener Neustadt, Austria.
 
-Internet: http://www.irfanview.com, http://www.irfanview.net
+Internet:  http://www.irfanview.com,  http://www.irfanview.net 
 Email: irfanview@gmx.net
 
-All rights reserved. 
+All rights reserved.
