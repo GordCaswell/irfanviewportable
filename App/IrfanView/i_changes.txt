@@ -5,9 +5,27 @@ E-Mail: irfanview@gmx.net
 WWW   : http://www.irfanview.com
 -------------------------------------------------------------------------------
 
+Version 4.42		(Release date: 2016-03-10)
+- New File menu: Save Selection as (Hotkey: CTRL + SHIFT + B)
+- New option in Capture dialog: Show timer countdown
+- New option in Export Tiles dialog: Extract all pages from multipage files
+- New option in Fine Rotation dialog: Select "best" old image
+- New option in Print dialog: No image overflow on page
+- New HTML-Export dialog option: Copy extra files to destination folder
+  (prepare a "copy_files.txt" file with filenames)
+- Some PCX/BMP/PPM loading bugs fixed (thanks to Moshe Kaplan)
+- Improved FITS format loading
+- New text pattern: $R = image aspect ratio (width/height)
+- New hotkey: CTRL + Click into selection = clear selection
+- Some minor fixes (Thumbnails/folder scan)
+- Some workarounds for Windows-10 bugs/issues (Installer signature, Associations)
+- Several PlugIns are changed/updated, please install the newest versions:
+  Download from: http://www.irfanview.com/plugins.htm
+-------------------------------------------------------------------------------
+
 Version 4.41		(Release date: 2015-11-29)
 - 64-bit version: Use 32-bit TWAIN drivers if 64-bit drivers not installed
-- New dialog/GUI on Windows tablets ("2 in 1" ,Thanks to Arun Anbu from Intel)
+- New dialog/GUI on Windows tablets ("2 in 1", Thanks to Arun Anbu from Intel)
 - New hotkey: SHIFT + Tab: Start/End Tablet mode dialog
 - New hotkey: CTRL + Insert: Edit->Copy
 - New Slideshow hotkey: Q = Pause/Resume a timer slideshow
