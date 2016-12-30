@@ -65,7 +65,7 @@ List of all command line options supported in IrfanView:
   /info=txtfile         - write image infos to "txtfile"
   /fullinfo             - used for /info, write EXIF, IPTC and Comment data
   /shortinfo            - used for /info, write just file index and name
-  /append=tiffile       - append image as (TIF) page to "tiffile"
+  /append=destfile      - append image as page to "destfile" (must be TIF or PDF)
   /multitif=(tif,files) - create multipage TIF from input files
   /multipdf=(pdf,files) - create multipage PDF from input files
   /panorama=(X,files)   - create panorama image from input files; X = direction (1 or 2)
@@ -105,6 +105,7 @@ Example for conversion:
   i_view32.exe /filelist=c:\mypics.txt /resize=(500,300) /aspectratio /resample /convert=d:\temp\*.png
   i_view32.exe c:\test.bmp /convert=c:\test_$Wx$H.jpg
   i_view32.exe c:\test.bmp /convert=c:\temp\$N.jpg
+  i_view32.exe c:\test.bmp /convert=c:\temp\*.tif
   i_view32.exe c:\test.bmp /makecopy /convert=c:\temp\$N.jpg
   i_view32.exe c:\test.bmp /resize=(100,100) /resample /aspectratio /convert=d:\$N_thumb.jpg
   i_view32.exe c:\test.bmp /convert=c:\temp\$T(%Y%m%d)\test_$Wx$H.jpg
@@ -116,7 +117,8 @@ Example for conversion:
 
 Example for slideshow: 
   i_view32.exe /slideshow=c:\mypics.txt
-  (Note: The file 'c:\mypics.txt' contains, in each line, a name of an image file, including the full path OR path relative to "i_view32.exe") 
+  (Note: The file 'c:\mypics.txt' contains, in each line, a name of an image file, including the full path OR path relative to "i_view32.exe")
+  (Lines starting with ";" will be ignored and can be used as comment)
   i_view32.exe /slideshow=c:\mypics.txt /reloadonloop
   i_view32.exe /slideshow=c:\images\
   i_view32.exe /slideshow=c:\images\ /reloadonloop
@@ -137,7 +139,7 @@ Example for thumbnails:
   i_view32.exe /filelist=c:\mypics.txt /thumbs
   => load filenames from TXT file and display as thumbnails
 
-Example for file: 
+Example for file: (this option is nice if you need to send the input file(s) as last parameter)
   i_view32.exe /file=c:\image.jpg (same as "i_view32.exe c:\image.jpg")
   i_view32.exe /convert="c:\result\*.tif" /file=c:\image1.jpg
   i_view32.exe /convert="c:\result\*.tif" /file=c:\image1.jpg "c:\spacy image2.jpg" c:\image3.jpg
@@ -199,6 +201,10 @@ Example for capture:
   => Capture the whole screen
   i_view32.exe /capture=6
   => start in Capture mode, use last used capture dialog settings
+  i_view32.exe /capture=7
+  => Capture the screen rectangle from GUI/Capture dialog (=INI values)
+  i_view32.exe /capture=7=(0,0,800,600)
+  => Capture the screen rectangle: x (0), y (0), width (800), height (600)
   capture values: 
   0 = whole screen
   1 = current monitor
@@ -207,7 +213,7 @@ Example for capture:
   4 = rectangle selection
   5 = object selected with the mouse
   6 = start in capture mode (can't be combined with other commandline options)
-  7 = fixed rectangle (using capture dialog values)
+  7 = fixed rectangle (using capture dialog values or direct input)
   Advanced examples:
   i_view32.exe /capture=2 /convert=c:\test.jpg
   Capture foreground window and save result as file.
@@ -215,9 +221,9 @@ Example for capture:
   Capture foreground window and save result as file; file name contains time stamp.
 
 Example for ini:
+  i_view32.exe c:\test.jpg /ini="c:\temp\"
   i_view32.exe /ini
   i_view32.exe c:\test.jpg /ini
-  i_view32.exe c:\test.jpg /ini="c:\temp\"
 
 Example for clipboard paste:
   i_view32.exe /clippaste
@@ -240,6 +246,7 @@ Example for /scan:
   i_view32.exe /scanhidden /dpi=(150,150)
   i_view32.exe /scan /convert=c:\test.jpg
   i_view32.exe /scan /append=c:\test.tif
+  i_view32.exe /scan /append=c:\test.pdf
   i_view32.exe /scanhidden /convert=c:\test.jpg
   i_view32.exe /scanhidden /convert=c:\test_$U(%d%m%Y_%H%M%S).jpg
   i_view32.exe /scanhidden /gray /convert=c:\test.jpg
@@ -268,15 +275,15 @@ Example for /filepattern:
   => Go to folder "c:\images\" and show JPG with names "123*" as thumbnails
 
 Example for /effect=(effect-nr,param1,param2):
-  i_view32.exe c:\test.jpg /effect=(6,3,0)
+  i_view32.exe c:\test.jpg /effect=(8,3,0)
   => apply Median filter, parameter = 3
-  i_view32.exe c:\test.jpg /effect=(2,3,50)
+  i_view32.exe c:\test.jpg /effect=(4,3,50)
   => apply Blur-2 filter, parameter1 = 3, parameter2 = 50
   effect-nr values: (from Effect-Browser dialog)
   1 = Blur
-  2 = Blur-2
+  2 = Gaussian Blur
   ...
-  38 = Metallic Ice
+  42 = Color Temperature
   80 = AltaLux
  
 Example for /sharpen:
@@ -304,6 +311,7 @@ Examples for /info:
   i_view32.exe c:\test.jpg /info=c:\test.txt /fullinfo
 
 Example for /append:
+  i_view32.exe c:\test.jpg /append=c:\test.pdf
   i_view32.exe c:\test.jpg /append=c:\test.tif
   => Open 'c:\test.jpg' and append it as page to 'c:\test.tif'
 
@@ -323,6 +331,7 @@ Example for /panorama:
   => Create horizontal panorama image from 2 other files
   i_view32.exe /panorama=(1,c:\test.tif,c:\*.bmp)
   i_view32.exe /panorama=(2,c:\test.tif,c:\*.bmp,c:\dummy.jpg,c:\123*.gif)
+  i_view32.exe /panorama=(2,c:\test.tif,"c:\crazy, comma filename.jpg")
   i_view32.exe /panorama=(2,filelist=c:\mypics.txt)
 
 Example for /jpgq:
@@ -339,7 +348,7 @@ Example for /tifc:
 Example for wallpaper:
   i_view32.exe c:\test.jpg /wall=0
   => Open 'c:\test.jpg' and set is as wallpaper (centered)
-  wall values: 0 (centered), 1 (tiled), 2 (stretched), 3 (proportional)
+  wall values: 0 (centered), 1 (tiled), 2 (stretched), 3 (proportional), 4 (fill)
   i_view32.exe c:\images\*.jpg /random /wall=0 /killmesoftly
   i_view32.exe /filelist=c:\mypics.txt /random /wall=0 /killmesoftly
   => get random file from the folder/list and set as wallpaper

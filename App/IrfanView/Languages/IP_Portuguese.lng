@@ -1,0 +1,197 @@
+;Language file template generated on Wed, 28 Jul 2010 19:20:11 GMT by IPLFGen by Matteo Italia - v. 0.1.4.7
+;=== FILE STRUCTURE ===
+;The language file contains a [FileInfo] section, a [General] section and some numbered sections (e.g. [101], [102], ...)
+;The [FileInfo] sections contains informations about the translator, the language name and the target IrfanPaint version.
+;In the TargetVersion value you can insert a * so that the comparison between the TargetVersion and the IrfanPaint version stop there.
+;For example, if you want to make the language file work with all the 0.4.11 builds, just insert 0.4.11.*; be careful, always insert the asterisk after a dot.
+;The [General] section contains the strings of the string table; they are usually strings that are displayed in error messages, tooltips, ...
+;Each numbered section contains the strings of a dialog; the strings numbers are the IDs of the controls in which they will be displayed.
+;The 0 string is the title of the dialog.
+;=== ACCELERATORS ===
+;The & symbol is put before the accelerator letter; for example if you find a &Bold it means that the button that contains that text can be pressed also pressing ALT+B.
+;You can change the accelerator letter (e.g. in Italian &Italic becomes &Corsivo), but be careful: the accelerators of the same dialog must not conflict.
+;=== ESCAPE SEQUENCES ===
+;The recognised escape sequences are:
+;   \n      newline          (ASCII 0x0A)
+;   \r      carriage return  (ASCII 0x0D)
+;   \\      backslash        (ASCII 0x5C)
+;Unrecognized escape sequences are treated as left as they are.
+;In most of controls to make a new line you need to insert a \r\n.
+;=== PLACEHOLDERS ===
+;Text enclosed between two "%" is a placeholder for something else that will be put there at runtime.
+;You can move the placeholder where you want in the string, so you'll be able to arrange the sentence as you like more.
+;These text placeholders are specific of each string; you cannot use the placeholders of a string in another.
+;The placeholders names are usually self-descriptive. Anyway, here's a list of the currently used placeholders:
+;   %translator%    Translator name as stated in the [FileInfo]\TranslatorName key.
+;   %language%      Language name as stated in the [FileInfo]\LanguageName key.
+;=== COMMENTS ===
+;If a row begins with a ; it is a comment; it is completely ignored by the parser.
+;You can put any comment you want, but all the comments will be stripped out when the file will be distributed to reduce file size unless you ask to keep them.
+;It is very appreciated if you strip out all the comments (including these that you are reading now) by yourself. Thank you!
+;=== MISC ===
+;If you do not translate a string it will remain untranslated in the interface, no error message (like "incomplete language file") will be issued.
+[FileInfo]
+TranslatorName=Luis Neves
+LanguageName=Português (Portugal)
+TargetVersion=0.4.13.*
+[General]
+1001=Selecção
+1002=Pincel
+1003=Apagador
+1004=Clonar
+1005=Substituir cor
+1006=Ferramenta de Texto
+1007=Linha
+1008=Seta
+1009=Elipse
+1010=Rectângulo
+1011=Balde
+1012=Pipeta
+1013=Ferramenta de endireitar/rodar imagem
+1014=Ferramenta de Medição
+1015=Definições do Lápis e Pincel
+1016=Ajuda de contexto exaustiva
+1017=Acerca...
+2001=A Ferramenta de Selecção é para uso normal do IrfanView, por examplo para criar selecções.
+2002=O Pincel é usado para pintura manual.\nClique e arraste com o botão esquerdo do rato para pintar com a cor de primeiro plano.\nClique e arraste com o botão direito do rato para pintar com a cor de fundo.
+2003=O Apagador é usado para apagar manualmente.\nClique e arraste com o botão esquerdo do rato para apagar com a cor de fundo.\nClique e arraste com o botão direito do rato para apagar restaurando a imagem original.
+2004=A Ferramenta de Clonagem copia uma parte da imagem para outra área.\nPode ser utilizada para remover pó e riscos da fotografia.\nClique no botão direito para seleccionar a origem, depois clique com o esquerdo onde deseja iniciar a substituição.
+2005=Esta ferramenta é usada para substituir uma cor por outra.\nClique e arraste com o botão esquerdo do rato para substituir a cor de fundo pela de primeiro plano.\nClique no botão direito para substituir a cor de primeiro plano pela de fundo.
+2006=A Ferramenta de Texto adiciona texto formatado à imagem.\nA mira do cursor do texto será a linha base para inserir o texto.\nO texto será alinhado à esquerda, à direita ou centrado no ponto de inserção.
+2007=A Ferramenta Linha desenha linhas direitas.\nClique a arraste com o botão esquerdo para definir a linha. Liberte o botão do rato para desenhá-la.\nPara abortar a linha, clique no botão direito do rato.\nPrima CTRL enquanto desenha para centrar a linha no ponto inicial.\nPrima SHIFT enquanto desenha para limitar a linha a múltiplos de 45°.
+2008=Esta Ferramenta desenha Setas.\nClique e arraste para definir a seta. Liberte o botão do rato para desenhá-la.\nPara abortar a seta, clique no botão direito do rato.\nPrima CTRL enquanto desenha para centrar a seta no ponto inicial.\nPrima SHIFT enquanto desenha para limitar a seta a múltiplos de 45°.\nClique neste botão para abrir a janela de "Definições de Setas".
+2009=Esta Ferramenta é usada para desenhar círculos e elipses. Se o botão de preenchimento acima da paleta de cores estiver seleccionado, eles serão sólidos; se não, serão ocos.\nClique e arraste para definir a elipse. Liberte o botão do rato para desenhá-la.\nPara abortar a elipse, clique no botão direito do rato.\nPrima CTRL enquanto desenha para centrar a elipse no ponto inicial.\nPrima SHIFT enquanto desenha para desenhar um círculo.
+2010=Esta Ferramenta é usada para desenhar quadrados e rectângulos. Se o botão de preenchimento acima da paleta de cores estiver seleccionado, eles serão sólidos; se não, serão ocos.\nClique e arraste para definir o rectângulo. Liberte o botão do rato para desenhá-lo.\nPara abortar o rectângulo, clique no botão direito do rato.\nPrima CTRL enquanto desenha para centrar o rectângulo no ponto inicial.\nPrima SHIFT enquanto desenha para desenhar um quadrado.
+2011=A Ferramenta Balde é usada para preencher áreas com uma cor.\nClique no botão esquerdo do rato para preencher uma área com a cor de primeiro plano.\nClique no botão direito do rato para preencher uma área com a cor de fundo.
+2012=O Selector de Cor (Pipeta) é usado para seleccionar cores da imagem.\nClique numa cor com o botão esquerdo do rato para seleccionar a cor de primeiro plano.\nClique numa cor com o botão direito do rato para seleccionar a cor de fundo.\nClique neste botão premindo a tecla SHIFT para desactivar o regresso automático à ferramenta anterior.
+2013=Esta Ferramenta é usada para rodar uma imagem.\nClique e arraste para "sublinhar" uma parte da imagem que se deve tornar horizontal ou vertical.\nPara abortar a linha, clique no botão direito do rato.\nPrima CTRL enquanto desenha para centrar a linha no ponto inicial.\nPrima SHIFT enquanto desenha para limitar a linha a múltiplos de 45°.
+2014=Com esta ferramenta pode medir distâncias e ângulos na imagem.\nClique e arraste para seleccionar a destância a medir.\nTodas as medidas de ângulos são relativas a uma linha horizontal.\nPara abortar a linha, clique no botão direito do rato.\nPrima CTRL enquanto desenha para centrar a linha no ponto inicial.\nPrima SHIFT enquanto desenha para limitar a linha a múltiplos de 45.\nClique com o botão direito do rato neste botão para abrir a janela "Unidades de Medida", na qual pode definir novas unidades de medida e editar, eliminar e ordenar as actuais.
+2015=Exibe a janela de definições do lápis e pincel
+2016=Ajuda de contexto resumida
+2017=Exibe informação da versão do IrfanPaint
+5201=Antes de usar a ferramenta de clonagem, tem que definir um ponto de origem (faça clique com o botão direito do rato nele).\nActive a ajuda de contexto exaustiva e leia a dica da ferramenta de Clonagem para obter mais informações.
+5102=Não foi possível guardar as definições; verifique se é possível escrever no i_view32.ini.
+6001=Agradecimentos especiais para:\r\n\r\nIrfan Skiljan, que desenvolveu o IrfanView, gastou tempo a editá-lo para o IrfanPaint funcionar, deu-me muitas sugestões úteis e este sempre muito disponível.\r\n\r\nAos utilizadores do fórum do IrfanView, e em particular:\r\nBhikkhu Pesala, que escreveu as dicas exaustivas e a página de ajuda, relatou erros, ajudou-me a monitorizá-los e deu-me muitas sugestões.\r\nMatera, que, do outro lado do mundo, me deixou fazer depuração remota no seu computador através de um VPN com ligação telefónica para monitorizar um erro; a tentativa falhou, mas foi bastante épico.\r\nSteve, o administrador do fórum.\r\n\r\nTodos os que testaram versões beta, e especialmente Leon Fisk, que me relatou todos os problemas do IrfanPaint no Windows NT 4.\r\n\r\nDavide Pizzolato e a sua grande biblioteca CxImage (http://www.codeproject.com/KB/graphics/cximage.aspx), da qual subtraí algumas partes do código.\r\n\r\nLode Vandevenne e a sua eficiente implementação do algoritmo de preenchimento por digitalização linear (http://student.kuleuven.be/~m0216922/CG/floodfill.html), que adaptei ao IrfanPaint.\r\n\r\nCodeProject.com e aos seus excelentes artigos, que me ajudaram muitas vezes.\r\n\r\nTodos os tradutores.\r\n\r\nTodos os utilizadores que fizeram doações: obrigado!
+1443=Primeiro Plano
+1444=Fundo
+5301="%what%" não é um número válido.
+5302=Os campos não podem estar vazios.
+1101=Tradução %language% por %translator%
+1651=Nome
+1652=Símbolo
+1653=Definição
+1654=Tem a certeza que quer eliminar a unidade de medida seleccionada?
+1655=Confirmar eliminação
+7001=unidade padrão
+7002=n.d.
+7003=PPP não definidos
+7011=polegada
+7012=píxel
+7013=grau
+7014=milímetro
+5000=Erro
+[101]
+0=Acerca do IrfanPaint
+1=OK
+1102=Texto
+1104=&Visite a página do IrfanPaint
+[100]
+0=Paint
+1060=Barra do IrfanPaint
+1053=Largura (px)
+1059=Preencimento
+1056=Tolerância:
+[103]
+0=Definições de setas
+1=OK
+2=Cancelar
+1301=&1ª seta
+1311=Desenhar:
+1302=&2ª seta
+1309=Espessura:
+1310=Comprimento:
+1308=Aberta
+[102]
+0=Selecção de cor
+1=OK
+2=Cancelar
+[104]
+0=Definições de Lápis e Pincel
+1442=Lápis
+1441=Pincel
+1=OK
+2=Cancelar
+1432=Estilo:
+1404=_______
+1405=_ _ _ _ _
+1406=. . . . . .
+1407=_ . _ . _ .
+1408=_ . . _ . .
+1433=Terminação:
+1410=Redonda
+1411=Quadrada
+1412=Plana
+1434=Uniões:
+1413=Redondas
+1414=Biseladas
+1415=Esquadrias
+1416=Sólidas
+1417=- (horizontal)
+1418=|| (vertical)
+1419=\\\\ (para baixo)
+1420=//  (para cima)
+1421=+ (ortogonal)
+1422=x (diagonal)
+1435=Sólido
+1437=Trama: 45° \esq->dir
+1438=Trama: cruzado
+1436=Trama: linha
+1439=Cor
+1445=Largura do lápis
+1448=píxel (1-9999)
+1440=Cor secundária da trama
+1426=Transparente
+1429=esp = esp 1px\r\npt = 1 term
+1431=Clique no painel acima para alterar estilos fundo e 1º plano.
+[105]
+0=Inserir texto
+1501=Tipo de letra:
+1502=Tamanho:
+1506=Negrito
+1507=&Itálico
+1508=S&ublinhado
+1509=Ri&scado
+1510=Alinhar à &esquerda
+1511=&Centrar
+1512=Alinhar à di&reita
+1=OK
+2=Cancelar
+1526=Manter para &pré-visualizar
+1513=Seleccionar &cor...
+1521=Renderizar como
+1522=Contorno do texto
+1524=Texto notmal
+1523=Texto preenchido
+1525=Texto suavizado
+[106]
+0=Unidades de medida
+1602=Fe&char
+1603=Para cima
+1604=Para baixo
+1605=A&bsoluto
+1606=&Adicionar...
+1607=&Editar...
+1608=&Remover
+[107]
+0=Editar unidade de medida
+1701=Nome:
+1703=Símbolo:
+1705=Definição:
+1706=1 %unitsymbol% =
+1=OK
+2=Cancelar
+[108]
+0=Resultados de medição
+1=OK
+1803=&Nova unidade...
+1802=&Copiar

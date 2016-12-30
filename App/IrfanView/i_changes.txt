@@ -5,6 +5,33 @@ E-Mail: irfanview@gmx.net
 WWW   : http://www.irfanview.com
 -------------------------------------------------------------------------------
 
+Version 4.44		(Release date: 2016-12-20)
+- Metadata PlugIn ported to Unicode (EXIF/IPTC/Comment data in JPG files)
+- Batch scan dialog: Scan to multipage file works also with PDF output
+- New Edit menu options: Remove or Insert strip (based on selection)
+- New Blur filter: Gaussian Blur (thanks to Ivan Kuckir)
+- New Blur filter: Fast Gaussian Blur (thanks to Mario Klingemann)
+- New Properties->Fullscreen option: Show blurred image sides
+- Option to show mouse coordinates (Properties->Viewing)
+- New options in Histogram dialog: modeless dialog, selections, curves
+- New effect added: Vertical Shift (Effects browser dialog)
+- New Thumbnails menu: Show/hide filenames text for thumbnails
+- New Image->Effects PlugIn: Film Simulation (thanks to Jan Ingwer Baer)
+  (check the PlugIns page for CLUT files download)
+- New wallpaper option: Fill (Hotkey: CTRL + SHIFT + F)
+- New Rename dialog option: Rename also sidecar files
+- New Print dialog option: Save settings (without printing)
+- Command line option "/append" works also with PDF output
+- A BMP loading bug fixed (thanks to Ren Yi)
+- The hotkey "D" (clear screen) works also in Fullscreen/Slideshow mode
+- Loading crashes fixed in JP2 PlugIn (JPG-2000 format)
+- The Luratech formats (JP2/JPM) are now Freeware (Saving and Batch mode)
+- Command line: /convert accepts wildcard also for a single filename, like:
+  i_view32.exe c:\testimg.bmp /convert=c:\tifs\*.tif => save as "testimg.tif"
+- Command line: /capture=7 can contain the input rectangle, like:
+  i_view32.exe /capture=7=(0,0,800,600)
+-------------------------------------------------------------------------------
+
 Version 4.42		(Release date: 2016-03-10)
 - New File menu: Save Selection as (Hotkey: CTRL + SHIFT + B)
 - New option in Capture dialog: Show timer countdown
@@ -57,7 +84,7 @@ Version 4.40		(Release date: 2015-07-31)
 - New hotkey: CTRL + SHIFT + mouse click: Create selection based on clipboard image
 - New button in Batch processing dialog: Pause/Resume
 - New button in Advanced batch dialog: Get current selection for cropping
-- You can Drag&Drop (or Send To) multiple files to IrfanView shorcut or window
+- You can Drag&Drop (or Send To) multiple files to IrfanView shortcut or window
 - PlugIns "Metadata" and "JPG-Transform" included in the IrfanView installer
 - New command line option: /file=filename(s)
   => set the input filename(s) (at the end of the command chain)
